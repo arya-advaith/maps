@@ -11,7 +11,8 @@ config_version=5
 [application]
 
 config/name="MAP"
-config/features=PackedStringArray("4.4", "Mobile")
+run/main_scene="res://node_3d.tscn"
+config/features=PackedStringArray("4.3", "Mobile")
 config/icon="res://icon.svg"
 
 [rendering]
