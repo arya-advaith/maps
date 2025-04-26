@@ -1,0 +1,64 @@
+[gd_scene load_steps=3 format=3 uid="uid://datkaibq05cp"]
+
+[ext_resource type="Script" uid="uid://cyyquwwpqhuuk" path="res://MainPage/main_menu.gd" id="1_48e5m"]
+[ext_resource type="Texture2D" uid="uid://b5fiw4bglpbi3" path="res://assets/MainBG.png" id="1_ttag7"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_48e5m")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 401.0
+offset_bottom = 599.0
+texture = ExtResource("1_ttag7")
+expand_mode = 1
+
+[node name="PlayButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.35
+anchor_top = 0.398
+anchor_right = 0.607
+anchor_bottom = 0.482
+offset_left = 4.99998
+offset_top = 0.199982
+offset_right = 28.2
+offset_bottom = -0.200012
+theme_override_font_sizes/font_size = 30
+text = "Play"
+
+[node name="Options" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.35
+anchor_top = 0.398
+anchor_right = 0.607
+anchor_bottom = 0.482
+offset_left = 7.99998
+offset_top = 69.2
+offset_right = 27.2
+offset_bottom = 68.8
+theme_override_font_sizes/font_size = 30
+text = "Options"
+
+[node name="Quit" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.35
+anchor_top = 0.398
+anchor_right = 0.607
+anchor_bottom = 0.482
+offset_left = 7.99998
+offset_top = 139.2
+offset_right = 27.2
+offset_bottom = 138.8
+theme_override_font_sizes/font_size = 30
+text = "Quit"
+
+[connection signal="pressed" from="PlayButton" to="." method="_on_play_button_pressed"]

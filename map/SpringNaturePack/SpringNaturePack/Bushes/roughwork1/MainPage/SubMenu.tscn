@@ -1,0 +1,82 @@
+[gd_scene load_steps=6 format=3 uid="uid://b865xgt2dwnru"]
+
+[ext_resource type="Script" uid="uid://b0t55meissm2s" path="res://MainPage/sub_menu.gd" id="1_abcxp"]
+[ext_resource type="Texture2D" uid="uid://btiurdrys74ii" path="res://assets/SubMenu/Story1.jpg" id="1_gxhra"]
+[ext_resource type="Texture2D" uid="uid://dbajjmrnjifvd" path="res://assets/SubMenu/Story2.jpeg" id="2_abcxp"]
+[ext_resource type="Texture2D" uid="uid://d3e5golhlmn3s" path="res://assets/SubMenu/Story 3.jpeg" id="3_c10wd"]
+[ext_resource type="Texture2D" uid="uid://chsyvtbvxjpik" path="res://assets/SubMenu/Story 4.jpeg" id="4_1fjqg"]
+
+[node name="SubMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_abcxp")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.998
+offset_right = 3.0
+offset_bottom = 0.200012
+
+[node name="Story1" type="Sprite2D" parent="TextureRect"]
+position = Vector2(99.5, 147.563)
+scale = Vector2(0.310937, 0.821379)
+texture = ExtResource("1_gxhra")
+
+[node name="Story2" type="Sprite2D" parent="TextureRect"]
+position = Vector2(300, 148)
+scale = Vector2(0.673333, 1.7619)
+texture = ExtResource("2_abcxp")
+
+[node name="Story3" type="Sprite2D" parent="TextureRect"]
+position = Vector2(102, 447.625)
+scale = Vector2(0.773764, 1.59555)
+texture = ExtResource("3_c10wd")
+
+[node name="Story4" type="Sprite2D" parent="TextureRect"]
+position = Vector2(300.5, 446.875)
+scale = Vector2(0.646104, 1.86656)
+texture = ExtResource("4_1fjqg")
+
+[node name="Story1" type="Button" parent="."]
+layout_mode = 0
+offset_left = 44.0
+offset_top = 119.0
+offset_right = 153.0
+offset_bottom = 169.0
+theme_override_font_sizes/font_size = 30
+text = "Story 1"
+
+[node name="Story2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 251.0
+offset_top = 119.0
+offset_right = 360.0
+offset_bottom = 169.0
+theme_override_font_sizes/font_size = 30
+text = "Story 2"
+
+[node name="Story3" type="Button" parent="."]
+layout_mode = 0
+offset_left = 44.0
+offset_top = 414.0
+offset_right = 153.0
+offset_bottom = 464.0
+theme_override_font_sizes/font_size = 30
+text = "Story 3"
+
+[node name="Story4" type="Button" parent="."]
+layout_mode = 0
+offset_left = 244.0
+offset_top = 416.0
+offset_right = 353.0
+offset_bottom = 466.0
+theme_override_font_sizes/font_size = 30
+text = "Story 4"
+
+[connection signal="pressed" from="Story1" to="." method="_on_story_1_pressed"]

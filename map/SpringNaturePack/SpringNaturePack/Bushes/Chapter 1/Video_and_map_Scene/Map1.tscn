@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=3 uid="uid://b8eoqkhbff6ph"]
+
+[ext_resource type="Texture2D" uid="uid://diw65t33b6dd7" path="res://Maps/SampleMap1.png" id="1_8ah4j"]
+[ext_resource type="Script" uid="uid://db03p1obyopl3" path="res://Story 1/Chapter 1/Video_and_map_Scene/map_1.gd" id="1_haesq"]
+
+[node name="Map1" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_haesq")
+
+[node name="SampleMap1" type="Sprite2D" parent="."]
+position = Vector2(200.25, 300)
+scale = Vector2(0.716216, 1.63388)
+texture = ExtResource("1_8ah4j")
+
+[node name="Next" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.812
+anchor_top = 0.893
+anchor_right = 0.915
+anchor_bottom = 0.945
+offset_left = 0.199982
+offset_top = 0.199951
+offset_bottom = -6.10352e-05
+text = "Next"
+
+[connection signal="pressed" from="Next" to="." method="_on_next_pressed"]

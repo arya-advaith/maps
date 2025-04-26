@@ -1,0 +1,150 @@
+[gd_scene load_steps=7 format=3 uid="uid://buk1oarm6e706"]
+
+[ext_resource type="Script" uid="uid://poh12tojs0t5" path="res://Story 1/Chapter 1/Ch1Level1.gd" id="1_nola3"]
+[ext_resource type="Texture2D" uid="uid://clg65pjc6dsrh" path="res://assets/background.png" id="2_4po0x"]
+[ext_resource type="Texture2D" uid="uid://njei5xtc4qbf" path="res://assets/life.png" id="3_qu776"]
+[ext_resource type="Texture2D" uid="uid://xv1kgl0xj3f4" path="res://assets/PauseButtons.png" id="4_w1e36"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1bvp3"]
+bg_color = Color(0.968436, 0.891646, 0.920868, 0.204)
+
+[sub_resource type="ImageTexture" id="ImageTexture_1bvp3"]
+
+[node name="main" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -360.0
+offset_bottom = -560.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_nola3")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 10.075
+anchor_bottom = 15.0
+offset_right = -2.00003
+offset_bottom = -6.10352e-05
+texture = ExtResource("2_4po0x")
+expand_mode = 1
+
+[node name="QuestionLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 17.0
+offset_top = 86.0
+offset_right = 109.0
+offset_bottom = 109.0
+text = "Question"
+horizontal_alignment = 1
+
+[node name="InputField" type="LineEdit" parent="."]
+layout_mode = 0
+offset_left = 71.0
+offset_top = 140.0
+offset_right = 261.0
+offset_bottom = 181.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_1bvp3")
+placeholder_text = "Type your answer here "
+
+[node name="SubmitButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 269.0
+offset_top = 141.0
+offset_right = 349.0
+offset_bottom = 179.0
+theme_override_constants/outline_size = 5
+theme_override_constants/h_separation = 5
+theme_override_constants/icon_max_width = 5
+theme_override_constants/align_to_largest_stylebox = 5
+theme_override_constants/line_spacing = 5
+theme_override_font_sizes/font_size = 21
+theme_override_icons/icon = SubResource("ImageTexture_1bvp3")
+text = "Submit"
+
+[node name="FeedbackLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 84.0
+offset_top = 229.0
+offset_right = 158.0
+offset_bottom = 264.0
+text = "Feedback"
+
+[node name="GuessTimer" type="Timer" parent="."]
+
+[node name="GameTimer" type="Timer" parent="."]
+wait_time = 60.0
+one_shot = true
+
+[node name="TimeLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 123.0
+offset_top = 52.0
+offset_right = 190.0
+offset_bottom = 75.0
+
+[node name="LivesContainer" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sprite2D" type="Sprite2D" parent="LivesContainer"]
+position = Vector2(11, 11)
+scale = Vector2(0.095, 0.09375)
+texture = ExtResource("3_qu776")
+
+[node name="Sprite2D2" type="Sprite2D" parent="LivesContainer"]
+position = Vector2(29, 11)
+scale = Vector2(0.1, 0.090625)
+texture = ExtResource("3_qu776")
+
+[node name="Sprite2D3" type="Sprite2D" parent="LivesContainer"]
+position = Vector2(47, 11)
+scale = Vector2(0.1, 0.09)
+texture = ExtResource("3_qu776")
+
+[node name="Sprite2D4" type="Sprite2D" parent="LivesContainer"]
+position = Vector2(66, 11)
+scale = Vector2(0.105, 0.09)
+texture = ExtResource("3_qu776")
+
+[node name="Sprite2D5" type="Sprite2D" parent="LivesContainer"]
+position = Vector2(86, 11)
+scale = Vector2(0.102656, 0.09)
+texture = ExtResource("3_qu776")
+
+[node name="PauseButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 359.0
+offset_right = 506.0
+offset_bottom = 147.0
+scale = Vector2(0.28, 0.28)
+icon = ExtResource("4_w1e36")
+flat = true
+
+[node name="StarLabel" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 7.925
+anchor_top = 1.375
+anchor_right = 9.425
+anchor_bottom = 1.95
+offset_left = -156.0
+offset_top = -48.0
+offset_right = -156.0
+offset_bottom = -48.0
+text = "Start: 0"
+
+[node name="HintButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 177.0
+offset_top = 191.0
+offset_right = 218.0
+offset_bottom = 222.0
+text = "Hint"
+
+[connection signal="timeout" from="GameTimer" to="." method="_on_game_timer_timeout"]
+[connection signal="pressed" from="PauseButton" to="." method="_on_pause_button_pressed"]
+[connection signal="pressed" from="HintButton" to="." method="_on_hint_button_pressed"]

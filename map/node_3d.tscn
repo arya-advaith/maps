@@ -1,0 +1,731 @@
+[gd_scene load_steps=53 format=3 uid="uid://d4ad7vysbgay5"]
+
+[ext_resource type="PackedScene" uid="uid://g436tx65j5fv" path="res://hex_forest.gltf.glb" id="1_wlxy5"]
+[ext_resource type="PackedScene" uid="uid://d32bfyoonpww7" path="res://hex_forest_detail.gltf.glb" id="2_3v7ru"]
+[ext_resource type="PackedScene" uid="uid://hgmwvbjhp8hg" path="res://hex_forest_roadA_detail.gltf.glb" id="3_tcnuu"]
+[ext_resource type="PackedScene" uid="uid://drumjaflp01i8" path="res://hex_forest_roadB_detail.gltf.glb" id="4_tuemg"]
+[ext_resource type="PackedScene" uid="uid://cumd8trbrtqtp" path="res://hex_forest_roadD.gltf.glb" id="5_i0g27"]
+[ext_resource type="PackedScene" uid="uid://o2uefh7rugau" path="res://hex_forest_roadE.gltf.glb" id="6_ealrb"]
+[ext_resource type="PackedScene" uid="uid://c36mr44ou4p0v" path="res://hex_forest_roadG.gltf.glb" id="7_jsnrv"]
+[ext_resource type="PackedScene" uid="uid://f12tula426qy" path="res://hex_forest_roadB.gltf.glb" id="8_lggff"]
+[ext_resource type="PackedScene" uid="uid://c2cn7lpk3x5h3" path="res://hex_forest_roadC.gltf.glb" id="9_s0gvp"]
+[ext_resource type="PackedScene" uid="uid://irb8jqfyolch" path="res://hex_forest_roadA.gltf.glb" id="10_vxd74"]
+[ext_resource type="PackedScene" uid="uid://dh7s8on1v32y5" path="res://hex_rock_transitionA.gltf.glb" id="11_dhlwf"]
+[ext_resource type="PackedScene" uid="uid://cdr3l1jo0151" path="res://hex_forest_transitionA.gltf.glb" id="12_5t8nk"]
+[ext_resource type="PackedScene" uid="uid://iskpuop7im83" path="res://hex_rock_detail.gltf.glb" id="13_j3e5s"]
+[ext_resource type="PackedScene" uid="uid://djh1iirjmgvmu" path="res://hex_rock.gltf.glb" id="14_nu31w"]
+[ext_resource type="PackedScene" uid="uid://cbd1prnl7boch" path="res://hex_rock_roadB.gltf.glb" id="15_ype4i"]
+[ext_resource type="PackedScene" uid="uid://b1ug3hmrvedor" path="res://hex_rock_roadC.gltf.glb" id="16_riyl1"]
+[ext_resource type="PackedScene" uid="uid://cahv4naq5qjla" path="res://hex_rock_roadD.gltf.glb" id="17_pb8dk"]
+[ext_resource type="PackedScene" uid="uid://mf8s7g6jdoeo" path="res://hex_rock_roadE.gltf.glb" id="18_2mu51"]
+[ext_resource type="PackedScene" uid="uid://6yh8md3u22a8" path="res://hex_rock_roadA.gltf.glb" id="19_vmvb8"]
+[ext_resource type="PackedScene" uid="uid://iao114iemxl2" path="res://hex_rock_roadF.gltf.glb" id="20_4i7mf"]
+[ext_resource type="PackedScene" uid="uid://w1gdjjyhnks" path="res://hex_rock_roadG.gltf.glb" id="21_3s0n5"]
+[ext_resource type="PackedScene" uid="uid://d26fk2ybrbk23" path="res://hex_rock_roadH.gltf.glb" id="22_qpkl4"]
+[ext_resource type="PackedScene" uid="uid://b4mbn6cti03si" path="res://hex_forest_waterA.gltf.glb" id="23_g4s1x"]
+[ext_resource type="PackedScene" uid="uid://cccw4p8xjyeu0" path="res://hex_forest_waterC_detail.gltf.glb" id="24_pf4ct"]
+[ext_resource type="PackedScene" uid="uid://djmhg4or8mpg6" path="res://hex_rock_waterA_detail.gltf.glb" id="25_5w2ad"]
+[ext_resource type="PackedScene" uid="uid://kbdjqtg7ac2x" path="res://hex_rock_waterC.gltf.glb" id="26_8p5mg"]
+[ext_resource type="PackedScene" uid="uid://6i78c3pefnuc" path="res://hex_rock_waterB_detail.gltf.glb" id="27_dsgk7"]
+[ext_resource type="PackedScene" uid="uid://cjpva6fetrjce" path="res://hex_sand_transitionB.gltf.glb" id="28_72tv7"]
+[ext_resource type="PackedScene" uid="uid://b83e65fgaj0ht" path="res://hex_sand.gltf.glb" id="29_x6a8j"]
+[ext_resource type="PackedScene" uid="uid://ctt073em8fwrl" path="res://hex_sand_roadB.gltf.glb" id="30_s7uix"]
+[ext_resource type="PackedScene" uid="uid://b54ns6kl26fy0" path="res://hex_sand_roadC.gltf.glb" id="31_4hyfj"]
+[ext_resource type="PackedScene" uid="uid://xn1irber0qrj" path="res://hex_sand_roadD.gltf.glb" id="32_8d0ks"]
+[ext_resource type="PackedScene" uid="uid://cl5etaxpu0li6" path="res://SpringNaturePack/SpringNaturePack/Bushes/BerryBush1.fbx" id="33_ykyjb"]
+[ext_resource type="PackedScene" uid="uid://jh00tc7rxtvu" path="res://SpringNaturePack/SpringNaturePack/Bushes/BerryBush2.fbx" id="34_sivbr"]
+[ext_resource type="PackedScene" uid="uid://c227w67frrup1" path="res://SpringNaturePack/SpringNaturePack/Bushes/Bush1.fbx" id="35_4yprr"]
+[ext_resource type="PackedScene" uid="uid://1edj1yptwn1w" path="res://SpringNaturePack/SpringNaturePack/Trees/Tree1.fbx" id="36_1ofy4"]
+[ext_resource type="PackedScene" uid="uid://d0spd35q30vfl" path="res://SpringNaturePack/SpringNaturePack/Trees/Tree2.fbx" id="37_a41ck"]
+[ext_resource type="PackedScene" uid="uid://8cp6rkxdqss1" path="res://SpringNaturePack/SpringNaturePack/Bushes/Bush3.fbx" id="38_alien"]
+[ext_resource type="PackedScene" uid="uid://dj0prchqdxtt0" path="res://SpringNaturePack/SpringNaturePack/Bushes/Bush2.fbx" id="39_8jhw1"]
+[ext_resource type="PackedScene" uid="uid://cdveit3o33i2o" path="res://SpringNaturePack/SpringNaturePack/Trees/AppleTree.fbx" id="40_if4ww"]
+[ext_resource type="PackedScene" uid="uid://cnymu5jsh5y6m" path="res://SpringNaturePack/SpringNaturePack/Bushes/BerryBush3.fbx" id="41_brp11"]
+[ext_resource type="PackedScene" uid="uid://b47omvu2iyanp" path="res://SpringNaturePack/SpringNaturePack/Debris/Rocks/Large/LargeRock1.fbx" id="42_dvobo"]
+[ext_resource type="PackedScene" uid="uid://cnydancniwt37" path="res://SpringNaturePack/SpringNaturePack/Debris/Rocks/Large/LargeRock4.fbx" id="43_gvloe"]
+[ext_resource type="PackedScene" uid="uid://gaj8i24v27r8" path="res://SpringNaturePack/SpringNaturePack/Debris/Rocks/Large/LargeRock10.fbx" id="44_m5u2i"]
+[ext_resource type="PackedScene" uid="uid://ymebb6lppt2x" path="res://SpringNaturePack/SpringNaturePack/Debris/Rocks/Medium/MediumRock2.fbx" id="45_7u8at"]
+[ext_resource type="PackedScene" uid="uid://h6e01xd22uvv" path="res://SpringNaturePack/SpringNaturePack/Debris/Rocks/Large/LargeRock5.fbx" id="46_u85y0"]
+[ext_resource type="PackedScene" uid="uid://b6m824ffplxfd" path="res://SpringNaturePack/SpringNaturePack/Debris/Rocks/Large/LargeRock7.fbx" id="47_uhrmv"]
+[ext_resource type="PackedScene" uid="uid://c5eui45461x46" path="res://SpringNaturePack/SpringNaturePack/Debris/Rocks/Medium/MediumRock10.fbx" id="48_v3d5c"]
+[ext_resource type="PackedScene" uid="uid://ndfx41mq7i2p" path="res://SpringNaturePack/SpringNaturePack/Debris/Logs/Log3.fbx" id="49_5xjb2"]
+[ext_resource type="PackedScene" uid="uid://b28s763o1gb3g" path="res://SpringNaturePack/SpringNaturePack/Debris/Logs/Log2.fbx" id="50_lppl5"]
+[ext_resource type="PackedScene" uid="uid://bpeafyw2tn5xh" path="res://SpringNaturePack/SpringNaturePack/Debris/Rocks/Large/LargeRock8.fbx" id="51_l74pm"]
+[ext_resource type="PackedScene" uid="uid://do22mklqkc0xy" path="res://SpringNaturePack/SpringNaturePack/Debris/Rocks/Large/LargeRock9.fbx" id="52_i7r67"]
+
+[node name="Node3D" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.8632, 0, -9.83559)
+
+[node name="hex_forest_gltf" parent="." instance=ExtResource("1_wlxy5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.987737, 0, 0.581022)
+
+[node name="hex_forest_detail_gltf" parent="." instance=ExtResource("2_3v7ru")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0145264, 0, -1.08942)
+
+[node name="hex_forest_gltf2" parent="." instance=ExtResource("1_wlxy5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.99, 0, -1.11847)
+
+[node name="hex_forest_gltf3" parent="." instance=ExtResource("1_wlxy5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.94869, 0, 0.581022)
+
+[node name="hex_forest_gltf4" parent="." instance=ExtResource("1_wlxy5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.987738, 0, 0.566496)
+
+[node name="hex_forest_roadA_detail_gltf" parent="." instance=ExtResource("3_tcnuu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.94642, 0, -1.07489)
+
+[node name="hex_forest_gltf5" parent="." instance=ExtResource("1_wlxy5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.958686, 0, -2.77438)
+
+[node name="hex_forest_gltf6" parent="." instance=ExtResource("1_wlxy5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.987737, 0, -2.7889)
+
+[node name="hex_forest_gltf7" parent="." instance=ExtResource("1_wlxy5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.93416, 0, -2.77438)
+
+[node name="hex_forest_roadB_detail_gltf" parent="." instance=ExtResource("4_tuemg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.90453, 0, -1.07417)
+
+[node name="hex_forest_roadB_detail_gltf2" parent="." instance=ExtResource("4_tuemg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.88237, 0, -1.04007)
+
+[node name="hex_forest_roadD_gltf" parent="." instance=ExtResource("5_i0g27")]
+transform = Transform3D(0.493304, 0, -0.869857, 0, 1, 0, 0.869857, 0, 0.493304, 7.86021, 0, -1.04007)
+
+[node name="hex_forest_roadE_gltf" parent="." instance=ExtResource("6_ealrb")]
+transform = Transform3D(0.524774, -5.06559e-10, -0.851242, 2.68327e-10, 1, -4.29665e-10, 0.851242, -2.93629e-12, 0.524774, 8.86618, 0, 0.664963)
+
+[node name="hex_forest_detail_gltf2" parent="." instance=ExtResource("2_3v7ru")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.89856, 0, -2.77921)
+
+[node name="hex_forest_roadG_gltf" parent="." instance=ExtResource("7_jsnrv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.8551, 0, 2.35295)
+
+[node name="hex_forest_roadB_gltf" parent="." instance=ExtResource("8_lggff")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.8389, 0, 2.39817)
+
+[node name="hex_forest_roadB_gltf2" parent="." instance=ExtResource("8_lggff")]
+transform = Transform3D(0.505601, -0.0178347, 0.862583, 0.00973065, 0.99984, 0.014969, -0.862713, 0.000825153, 0.505694, 8.88323, 0, 4.05798)
+
+[node name="hex_forest_roadB_gltf3" parent="." instance=ExtResource("8_lggff")]
+transform = Transform3D(0.470581, 0, 0.882357, 0, 1, 0, -0.882357, 0, 0.470581, 7.87274, 0, 5.7623)
+
+[node name="hex_forest_roadC_gltf" parent="." instance=ExtResource("9_s0gvp")]
+transform = Transform3D(0.492348, 0, 0.870399, 0, 1, 0, -0.870399, 0, 0.492348, 6.89108, 0, 7.50474)
+
+[node name="hex_forest_detail_gltf3" parent="." instance=ExtResource("2_3v7ru")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.8804, 0, 0.60895)
+
+[node name="hex_forest_detail_gltf4" parent="." instance=ExtResource("2_3v7ru")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.93684, 0, 0.60895)
+
+[node name="hex_forest_gltf8" parent="." instance=ExtResource("1_wlxy5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.87578, 0, 0.686692)
+
+[node name="hex_forest_roadA_gltf" parent="." instance=ExtResource("10_vxd74")]
+transform = Transform3D(-0.999988, 0, -0.00479974, 0, 1, 0, 0.00479974, 0, -0.999988, 13.8444, 0, 2.40154)
+
+[node name="hex_forest_roadB_gltf4" parent="." instance=ExtResource("8_lggff")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.87117, 0, 7.50209)
+
+[node name="hex_forest_roadB_gltf5" parent="." instance=ExtResource("8_lggff")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.8406, 0, 7.50209)
+
+[node name="hex_forest_roadD_gltf2" parent="." instance=ExtResource("5_i0g27")]
+transform = Transform3D(0.518191, 0, -0.855265, 0, 1, 0, 0.855265, 0, 0.518191, 12.7064, 0, 7.47618)
+
+[node name="hex_forest_roadB_gltf6" parent="." instance=ExtResource("8_lggff")]
+transform = Transform3D(0.467683, 0, -0.883896, 0, 1, 0, 0.883896, 0, 0.467683, 13.6989, 0, 9.17639)
+
+[node name="hex_forest_roadB_gltf7" parent="." instance=ExtResource("8_lggff")]
+transform = Transform3D(0.502809, 0, -0.864398, 0, 1, 0, 0.864398, 0, 0.502809, 14.6442, 0, 10.8605)
+
+[node name="hex_forest_roadC_gltf2" parent="." instance=ExtResource("9_s0gvp")]
+transform = Transform3D(-0.504015, 0, 0.863695, 0, 1, 0, -0.863695, 0, -0.504015, 15.665, 0, 12.5755)
+
+[node name="hex_forest_roadD_gltf3" parent="." instance=ExtResource("5_i0g27")]
+transform = Transform3D(0.999625, 0, -0.0273982, 0, 1, 0, 0.0273982, 0, 0.999625, 16.645, 0, 10.9014)
+
+[node name="hex_forest_roadB_detail_gltf3" parent="." instance=ExtResource("4_tuemg")]
+transform = Transform3D(0.489337, 0, 0.872095, 0, 1, 0, -0.872095, 0, 0.489337, 7.87565, 0, 2.3957)
+
+[node name="hex_forest_roadD_gltf4" parent="." instance=ExtResource("5_i0g27")]
+transform = Transform3D(-0.999978, 0, -0.0066496, 0, 1, 0, 0.0066496, 0, -0.999978, 6.91507, 0, 4.11581)
+
+[node name="hex_forest_roadB_gltf8" parent="." instance=ExtResource("8_lggff")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.01625, 0, 4.13815)
+
+[node name="hex_forest_roadA_detail_gltf2" parent="." instance=ExtResource("3_tcnuu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.05041, 0, 4.16049)
+
+[node name="hex_forest_gltf9" parent="." instance=ExtResource("1_wlxy5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.94966, 0, 5.78417)
+
+[node name="hex_rock_transitionA_gltf" parent="." instance=ExtResource("11_dhlwf")]
+transform = Transform3D(-0.999915, 0, 0.0130199, 0, 1, 0, -0.0130199, 0, -0.999915, 14.7688, 0, 4.13713)
+
+[node name="hex_forest_transitionA_gltf" parent="." instance=ExtResource("12_5t8nk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.5998, 0, 7.5311)
+
+[node name="hex_rock_detail_gltf" parent="." instance=ExtResource("13_j3e5s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.8395, 0, 2.47474)
+
+[node name="hex_rock_gltf4" parent="." instance=ExtResource("14_nu31w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.8969, 0, 0.734211)
+
+[node name="hex_rock_transitionA_gltf2" parent="." instance=ExtResource("11_dhlwf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.7263, 0, 12.6028)
+
+[node name="hex_rock_transitionA_gltf3" parent="." instance=ExtResource("11_dhlwf")]
+transform = Transform3D(0.512313, 0, 0.858799, 0, 1, 0, -0.858799, 0, 0.512313, 14.7125, 0, 14.3498)
+
+[node name="hex_rock_gltf3" parent="." instance=ExtResource("14_nu31w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.712, 0, 10.8841)
+
+[node name="hex_rock_gltf5" parent="." instance=ExtResource("14_nu31w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.67, 0, 16.0403)
+
+[node name="hex_rock_gltf6" parent="." instance=ExtResource("14_nu31w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.7323, 0, 14.2856)
+
+[node name="hex_rock_transitionA_gltf4" parent="." instance=ExtResource("11_dhlwf")]
+transform = Transform3D(-0.468177, 0, -0.883635, 0, 1, 0, 0.883635, 0, -0.468177, 15.6423, 0.148068, 9.1935)
+
+[node name="hex_forest_gltf10" parent="." instance=ExtResource("1_wlxy5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.7965, 0, 4.0936)
+
+[node name="hex_forest_detail_gltf5" parent="." instance=ExtResource("2_3v7ru")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.83799, 0, 5.78417)
+
+[node name="hex_forest_gltf11" parent="." instance=ExtResource("1_wlxy5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.8103, 0, 5.756)
+
+[node name="hex_forest_detail_gltf6" parent="." instance=ExtResource("2_3v7ru")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.6738, 0, 5.78417)
+
+[node name="hex_rock_gltf" parent="." instance=ExtResource("14_nu31w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.6261, 0, 5.88035)
+
+[node name="hex_rock_transitionA_gltf5" parent="." instance=ExtResource("11_dhlwf")]
+transform = Transform3D(0.479044, 0, 0.877791, 0, 1, 0, -0.877791, 0, 0.479044, 11.7399, 0, 9.19248)
+
+[node name="hex_forest_gltf12" parent="." instance=ExtResource("1_wlxy5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.8754, 0, 9.21337)
+
+[node name="hex_forest_transitionA_gltf2" parent="." instance=ExtResource("12_5t8nk")]
+transform = Transform3D(0.491588, 0, -0.870828, 0, 1, 0, 0.870828, 0, 0.491588, 9.88074, 0, 9.17159)
+
+[node name="hex_rock_detail_gltf2" parent="." instance=ExtResource("13_j3e5s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.8207, 0, 10.8218)
+
+[node name="hex_rock_detail_gltf3" parent="." instance=ExtResource("13_j3e5s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.94074, 0, 10.9054)
+
+[node name="hex_rock_detail_gltf4" parent="." instance=ExtResource("13_j3e5s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.7399, 0, 12.5444)
+
+[node name="hex_rock_gltf2" parent="." instance=ExtResource("14_nu31w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.8088, 0, 0.736028)
+
+[node name="hex_rock_gltf7" parent="." instance=ExtResource("14_nu31w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.7262, 0, 4.23428)
+
+[node name="hex_rock_gltf8" parent="." instance=ExtResource("14_nu31w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.6077, 0, 5.887)
+
+[node name="hex_rock_gltf9" parent="." instance=ExtResource("14_nu31w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.02189, 0, 12.553)
+
+[node name="hex_rock_gltf10" parent="." instance=ExtResource("14_nu31w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.8231, 0, 15.9961)
+
+[node name="hex_rock_gltf11" parent="." instance=ExtResource("14_nu31w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.86742, 0, 12.553)
+
+[node name="hex_rock_gltf12" parent="." instance=ExtResource("14_nu31w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.804, 0, 14.2883)
+
+[node name="hex_rock_gltf13" parent="." instance=ExtResource("14_nu31w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.86742, 0, 15.9686)
+
+[node name="hex_rock_gltf14" parent="." instance=ExtResource("14_nu31w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.90334, 0, 14.2332)
+
+[node name="hex_forest_gltf13" parent="." instance=ExtResource("1_wlxy5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.02782, 0, 5.83191)
+
+[node name="hex_forest_gltf14" parent="." instance=ExtResource("1_wlxy5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.08048, 0, 4.15164)
+
+[node name="hex_forest_gltf15" parent="." instance=ExtResource("1_wlxy5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.93277, 0, 2.27856)
+
+[node name="hex_forest_gltf16" parent="." instance=ExtResource("1_wlxy5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0613003, 0, 5.80436)
+
+[node name="hex_forest_gltf17" parent="." instance=ExtResource("1_wlxy5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.91359, 0, 3.95883)
+
+[node name="hex_forest_gltf18" parent="." instance=ExtResource("1_wlxy5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.05293, 0, 7.45708)
+
+[node name="hex_forest_gltf19" parent="." instance=ExtResource("1_wlxy5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0613003, 0, 9.19243)
+
+[node name="hex_forest_gltf20" parent="." instance=ExtResource("1_wlxy5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.92196, 0, 9.19243)
+
+[node name="hex_forest_gltf21" parent="." instance=ExtResource("1_wlxy5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.96868, 0, 7.53972)
+
+[node name="hex_forest_gltf22" parent="." instance=ExtResource("1_wlxy5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.85013, 0, 5.72173)
+
+[node name="hex_forest_gltf23" parent="." instance=ExtResource("1_wlxy5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.93033, 0, 4.09655)
+
+[node name="hex_forest_gltf24" parent="." instance=ExtResource("1_wlxy5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.957876, 0, 7.45708)
+
+[node name="hex_forest_gltf25" parent="." instance=ExtResource("1_wlxy5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.97705, 0, 5.74927)
+
+[node name="hex_forest_gltf26" parent="." instance=ExtResource("1_wlxy5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.94519, 0, 2.38875)
+
+[node name="hex_forest_gltf27" parent="." instance=ExtResource("1_wlxy5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0613003, 0, 2.3612)
+
+[node name="hex_forest_detail_gltf7" parent="." instance=ExtResource("2_3v7ru")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0046, 0, 2.3612)
+
+[node name="hex_forest_detail_gltf8" parent="." instance=ExtResource("2_3v7ru")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.92845, 0, 2.3612)
+
+[node name="hex_forest_detail_gltf9" parent="." instance=ExtResource("2_3v7ru")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.93277, 0, 9.30262)
+
+[node name="hex_forest_gltf28" parent="." instance=ExtResource("1_wlxy5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.902785, 0, 10.9002)
+
+[node name="hex_rock_gltf15" parent="." instance=ExtResource("14_nu31w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.8591, 0, 4.09655)
+
+[node name="hex_rock_gltf16" parent="." instance=ExtResource("14_nu31w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.04456, 0, 2.41629)
+
+[node name="hex_rock_roadB_gltf" parent="." instance=ExtResource("15_ype4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.6129, 0, 10.9077)
+
+[node name="hex_rock_gltf17" parent="." instance=ExtResource("14_nu31w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.6795, 0, 9.18464)
+
+[node name="hex_rock_gltf18" parent="." instance=ExtResource("14_nu31w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.5716, 0.0103498, 7.48991)
+
+[node name="hex_rock_gltf19" parent="." instance=ExtResource("14_nu31w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.5909, 0, 7.54257)
+
+[node name="hex_rock_roadC_gltf" parent="." instance=ExtResource("16_riyl1")]
+transform = Transform3D(-0.532891, 0, -0.846184, 0, 1, 0, 0.846184, 0, -0.532891, 20.5787, 0, 10.9272)
+
+[node name="hex_rock_roadB_gltf2" parent="." instance=ExtResource("15_ype4i")]
+transform = Transform3D(0.522781, 0, 0.852467, 0, 1, 0, -0.852467, 0, 0.522781, 19.584, 0, 12.5615)
+
+[node name="hex_rock_roadB_gltf3" parent="." instance=ExtResource("15_ype4i")]
+transform = Transform3D(-0.548921, -2.91892e-08, -0.835875, -1.59241e-08, 1, -2.44631e-08, 0.835875, -1.17594e-10, -0.548921, 18.5495, 0, 14.2286)
+
+[node name="hex_forest_transitionA_gltf3" parent="." instance=ExtResource("12_5t8nk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.6846, 0, 12.556)
+
+[node name="hex_forest_transitionA_gltf4" parent="." instance=ExtResource("12_5t8nk")]
+transform = Transform3D(0.52013, 0, -0.854087, 0, 1, 0, 0.854087, 0, 0.52013, 16.6901, 0, 14.2799)
+
+[node name="hex_rock_roadC_gltf2" parent="." instance=ExtResource("16_riyl1")]
+transform = Transform3D(0.443697, 0, 0.896177, 0, 1, 0, -0.896177, 0, 0.443697, 17.6095, 0, 15.9054)
+
+[node name="hex_rock_roadB_gltf4" parent="." instance=ExtResource("15_ype4i")]
+transform = Transform3D(1, 0, -0.0010821, 0, 1, 0, 0.0010821, 0, 1, 19.5698, 0, 15.9199)
+
+[node name="hex_rock_roadD_gltf" parent="." instance=ExtResource("17_pb8dk")]
+transform = Transform3D(-0.999477, 0, 0.0323353, 0, 1, 0, -0.0323353, 0, -0.999477, 21.528, 0, 15.9606)
+
+[node name="hex_rock_roadE_gltf" parent="." instance=ExtResource("18_2mu51")]
+transform = Transform3D(0.50305, 0, 0.864257, 0, 1, 0, -0.864257, 0, 0.50305, 22.5461, 0, 14.2831)
+
+[node name="hex_rock_roadB_gltf5" parent="." instance=ExtResource("15_ype4i")]
+transform = Transform3D(-0.541239, 0, -0.840869, 0, 1, 0, 0.840869, 0, -0.541239, 23.5586, 0, 12.6343)
+
+[node name="hex_rock_gltf20" parent="." instance=ExtResource("14_nu31w")]
+transform = Transform3D(0.999748, 0, -0.0224605, 0, 1, 0, 0.0224605, 0, 0.999748, 20.5467, 0, 14.223)
+
+[node name="hex_rock_gltf21" parent="." instance=ExtResource("14_nu31w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.5727, 0, 12.5681)
+
+[node name="hex_rock_roadB_gltf6" parent="." instance=ExtResource("15_ype4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.4275, 0, 14.2718)
+
+[node name="hex_rock_roadC_gltf3" parent="." instance=ExtResource("16_riyl1")]
+transform = Transform3D(-0.504829, 0, -0.863219, 0, 1, 0, 0.863219, 0, -0.504829, 26.3964, 0, 14.3046)
+
+[node name="hex_rock_roadA_gltf" parent="." instance=ExtResource("19_vmvb8")]
+transform = Transform3D(0.522454, 0, 0.852668, 0, 1, 0, -0.852668, 0, 0.522454, 25.412, 0, 15.9781)
+
+[node name="hex_rock_roadF_gltf" parent="." instance=ExtResource("20_4i7mf")]
+transform = Transform3D(0.561101, 0, 0.827747, 0, 1, 0, -0.827747, 0, 0.561101, 24.5588, 0, 11.0561)
+
+[node name="hex_rock_roadG_gltf" parent="." instance=ExtResource("21_3s0n5")]
+transform = Transform3D(0.471412, 0, -0.881913, 0, 1, 0, 0.881913, 0, 0.471412, 23.6072, 0, 9.34974)
+
+[node name="hex_rock_roadA_gltf2" parent="." instance=ExtResource("19_vmvb8")]
+transform = Transform3D(0.999813, 0, -0.019337, 0, 1, 0, 0.019337, 0, 0.999813, 21.704, 0, 9.28411)
+
+[node name="hex_rock_gltf22" parent="." instance=ExtResource("14_nu31w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.59, 0, 10.9576)
+
+[node name="hex_rock_roadG_gltf2" parent="." instance=ExtResource("21_3s0n5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.583, 0, 9.38139)
+
+[node name="hex_rock_roadH_gltf" parent="." instance=ExtResource("22_qpkl4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.5975, 0, 7.71609)
+
+[node name="hex_rock_roadC_gltf4" parent="." instance=ExtResource("16_riyl1")]
+transform = Transform3D(-0.999866, 0, 0.0163705, 0, 1, 0, -0.0163705, 0, -0.999866, 26.5686, 0, 7.6821)
+
+[node name="hex_rock_roadA_gltf3" parent="." instance=ExtResource("19_vmvb8")]
+transform = Transform3D(0.524551, 0, -0.851379, 0, 1, 0, 0.851379, 0, 0.524551, 25.583, 0, 6.0168)
+
+[node name="hex_rock_roadB_gltf7" parent="." instance=ExtResource("15_ype4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.5542, 0, 9.38139)
+
+[node name="hex_rock_roadD_gltf2" parent="." instance=ExtResource("17_pb8dk")]
+transform = Transform3D(-0.999983, 0, 0.00581188, 0, 1, 0, -0.00581188, 0, -0.999983, 29.5254, 0, 9.3474)
+
+[node name="hex_forest_waterA_gltf" parent="." instance=ExtResource("23_g4s1x")]
+transform = Transform3D(-0.48157, 0, -0.876408, 0, 1, 0, 0.876408, 0, -0.48157, 5.87761, 0, 9.25305)
+
+[node name="hex_forest_waterA_gltf2" parent="." instance=ExtResource("23_g4s1x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.06486, 0, 9.1177)
+
+[node name="hex_forest_waterA_gltf3" parent="." instance=ExtResource("23_g4s1x")]
+transform = Transform3D(-0.478769, 0, -0.877941, 0, 1, 0, 0.877941, 0, -0.478769, 6.93403, 0, 10.8656)
+
+[node name="hex_forest_waterC_detail_gltf" parent="." instance=ExtResource("24_pf4ct")]
+transform = Transform3D(0.526763, 0, 0.850012, 0, 1, 0, -0.850012, 0, 0.526763, 4.93642, 0, 7.46343)
+
+[node name="hex_forest_waterC_detail_gltf2" parent="." instance=ExtResource("24_pf4ct")]
+transform = Transform3D(-0.489793, 0, 0.871839, 0, 1, 0, -0.871839, 0, -0.489793, 3.06366, 0, 7.49465)
+
+[node name="hex_forest_gltf29" parent="." instance=ExtResource("1_wlxy5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.09607, 0, 5.84038)
+
+[node name="hex_rock_waterA_detail_gltf" parent="." instance=ExtResource("25_5w2ad")]
+transform = Transform3D(0.495155, 0, -0.868804, 0, 1, 0, 0.868804, 0, 0.495155, 15.6769, 0, 15.9806)
+
+[node name="hex_rock_waterC_gltf" parent="." instance=ExtResource("26_8p5mg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.712, 0, 17.6176)
+
+[node name="hex_rock_waterC_gltf2" parent="." instance=ExtResource("26_8p5mg")]
+transform = Transform3D(-0.527593, 0, 0.849497, 0, 1, 0, -0.849497, 0, -0.527593, 12.7515, 0, 17.7218)
+
+[node name="hex_rock_waterB_detail_gltf" parent="." instance=ExtResource("27_dsgk7")]
+transform = Transform3D(0.521218, 0, 0.853423, 0, 1, 0, -0.853423, 0, 0.521218, 10.806, 0, 17.6523)
+
+[node name="hex_rock_gltf23" parent="." instance=ExtResource("14_nu31w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.588, 0, 17.5828)
+
+[node name="hex_rock_gltf24" parent="." instance=ExtResource("14_nu31w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.3972, 0, 12.7538)
+
+[node name="hex_rock_gltf25" parent="." instance=ExtResource("14_nu31w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.6997, 0, 9.27974)
+
+[node name="hex_rock_gltf26" parent="." instance=ExtResource("14_nu31w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.603, 0, 7.64691)
+
+[node name="hex_rock_gltf27" parent="." instance=ExtResource("14_nu31w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.7195, 0, 2.54)
+
+[node name="hex_rock_gltf28" parent="." instance=ExtResource("14_nu31w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.6575, 0, 4.27704)
+
+[node name="hex_rock_gltf29" parent="." instance=ExtResource("14_nu31w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.665, 0, 6.01409)
+
+[node name="hex_rock_gltf30" parent="." instance=ExtResource("14_nu31w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.6179, 0, 7.68165)
+
+[node name="hex_sand_transitionB_gltf" parent="." instance=ExtResource("28_72tv7")]
+transform = Transform3D(-0.999999, 0, -0.00132649, 0, 1, 0, 0.00132649, 0, -0.999999, 26.5705, 0, 11.1323)
+
+[node name="hex_sand_transitionB_gltf2" parent="." instance=ExtResource("28_72tv7")]
+transform = Transform3D(-0.537933, 0, -0.842988, 0, 1, 0, 0.842988, 0, -0.537933, 27.3053, 0, 12.7315)
+
+[node name="hex_sand_transitionB_gltf3" parent="." instance=ExtResource("28_72tv7")]
+transform = Transform3D(-0.549212, 0, -0.835683, 0, 1, 0, 0.835683, 0, -0.549212, 18.7473, 0, 0.888607)
+
+[node name="hex_sand_transitionB_gltf4" parent="." instance=ExtResource("28_72tv7")]
+transform = Transform3D(-0.998355, 0, 0.0573375, 0, 1, 0, -0.0573375, 0, -0.998355, 19.5685, 0, 2.57427)
+
+[node name="hex_sand_transitionB_gltf5" parent="." instance=ExtResource("28_72tv7")]
+transform = Transform3D(-0.516533, 0, -0.856267, 0, 1, 0, 0.856267, 0, -0.516533, 20.6059, 0, 4.25993)
+
+[node name="hex_sand_transitionB_gltf6" parent="." instance=ExtResource("28_72tv7")]
+transform = Transform3D(-0.999727, 0, 0.0233853, 0, 1, 0, -0.0233853, 0, -0.999727, 17.8397, 0, -0.883501)
+
+[node name="hex_sand_transitionB_gltf7" parent="." instance=ExtResource("28_72tv7")]
+transform = Transform3D(0.478493, 0, -0.878092, 0, 1, 0, 0.878092, 0, 0.478493, 23.6314, 0, 6.07526)
+
+[node name="hex_sand_transitionB_gltf8" parent="." instance=ExtResource("28_72tv7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.6688, 0, 4.3896)
+
+[node name="hex_sand_transitionB_gltf9" parent="." instance=ExtResource("28_72tv7")]
+transform = Transform3D(-0.512463, 0, -0.85871, 0, 1, 0, 0.85871, 0, -0.512463, 27.5646, 0, 6.07526)
+
+[node name="hex_sand_transitionB_gltf10" parent="." instance=ExtResource("28_72tv7")]
+transform = Transform3D(0.563468, 0, 0.826138, 0, 1, 0, -0.826138, 0, 0.563468, 28.5155, 0, 11.1323)
+
+[node name="hex_sand_gltf" parent="." instance=ExtResource("29_x6a8j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.6864, 0, 5.98882)
+
+[node name="hex_sand_gltf2" parent="." instance=ExtResource("29_x6a8j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.2935, 0, 12.8611)
+
+[node name="hex_sand_gltf3" parent="." instance=ExtResource("29_x6a8j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.5273, 0, 4.3896)
+
+[node name="hex_sand_gltf4" parent="." instance=ExtResource("29_x6a8j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.545, 0, 15.9299)
+
+[node name="hex_sand_gltf5" parent="." instance=ExtResource("29_x6a8j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.5391, 0, 17.6156)
+
+[node name="hex_sand_gltf6" parent="." instance=ExtResource("29_x6a8j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.6923, 0, 0.975052)
+
+[node name="hex_sand_gltf7" parent="." instance=ExtResource("29_x6a8j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.7847, 0, -0.84028)
+
+[node name="hex_sand_gltf8" parent="." instance=ExtResource("29_x6a8j")]
+transform = Transform3D(0.99919, -1.45655e-07, -0.0402364, 1.45655e-07, 1, -2.93143e-09, 0.0402364, -2.93143e-09, 0.99919, 18.9634, 0, -2.56916)
+
+[node name="hex_sand_gltf9" parent="." instance=ExtResource("29_x6a8j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.0617, 0, -2.61239)
+
+[node name="hex_sand_gltf10" parent="." instance=ExtResource("29_x6a8j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.6805, 0, 4.3896)
+
+[node name="hex_sand_gltf11" parent="." instance=ExtResource("29_x6a8j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.5568, 0, 2.66072)
+
+[node name="hex_sand_gltf12" parent="." instance=ExtResource("29_x6a8j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.5018, 0, 2.74716)
+
+[node name="hex_sand_gltf13" parent="." instance=ExtResource("29_x6a8j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.6373, 0, 1.06149)
+
+[node name="hex_sand_gltf14" parent="." instance=ExtResource("29_x6a8j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.49, 0, 2.74716)
+
+[node name="hex_sand_gltf15" parent="." instance=ExtResource("29_x6a8j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.3859, 0, 4.3896)
+
+[node name="hex_sand_gltf16" parent="." instance=ExtResource("29_x6a8j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.3859, 0, 14.3307)
+
+[node name="hex_sand_gltf17" parent="." instance=ExtResource("29_x6a8j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.3918, 0, 15.8867)
+
+[node name="hex_sand_gltf18" parent="." instance=ExtResource("29_x6a8j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.4841, 0, 17.5724)
+
+[node name="hex_sand_gltf19" parent="." instance=ExtResource("29_x6a8j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.5509, 0, 17.5291)
+
+[node name="hex_sand_gltf20" parent="." instance=ExtResource("29_x6a8j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.4762, 0, 17.5724)
+
+[node name="hex_sand_gltf21" parent="." instance=ExtResource("29_x6a8j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.82052, 0, 10.8729)
+
+[node name="hex_sand_gltf22" parent="." instance=ExtResource("29_x6a8j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.85196, 0, 7.5016)
+
+[node name="hex_sand_gltf23" parent="." instance=ExtResource("29_x6a8j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.85196, 0, 11.0458)
+
+[node name="hex_sand_gltf24" parent="." instance=ExtResource("29_x6a8j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.80285, 0, 9.31692)
+
+[node name="hex_sand_gltf25" parent="." instance=ExtResource("29_x6a8j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.86964, 0, 12.5586)
+
+[node name="hex_sand_gltf26" parent="." instance=ExtResource("29_x6a8j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.75963, 0, 5.81593)
+
+[node name="hex_sand_gltf27" parent="." instance=ExtResource("29_x6a8j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.93841, 0, 4.04382)
+
+[node name="hex_sand_gltf28" parent="." instance=ExtResource("29_x6a8j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.84607, 0, 2.35816)
+
+[node name="hex_sand_gltf29" parent="." instance=ExtResource("29_x6a8j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.545, 0, 19.258)
+
+[node name="hex_sand_gltf30" parent="." instance=ExtResource("29_x6a8j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.5568, 0, 19.258)
+
+[node name="hex_sand_gltf31" parent="." instance=ExtResource("29_x6a8j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.6491, 0, 20.7276)
+
+[node name="hex_sand_gltf32" parent="." instance=ExtResource("29_x6a8j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.5391, 0, 20.9005)
+
+[node name="hex_sand_gltf33" parent="." instance=ExtResource("29_x6a8j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.5941, 0, 20.9005)
+
+[node name="hex_sand_gltf34" parent="." instance=ExtResource("29_x6a8j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.5135, 0, 22.4565)
+
+[node name="hex_sand_gltf35" parent="." instance=ExtResource("29_x6a8j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.5096, 0, 5.90238)
+
+[node name="hex_sand_gltf36" parent="." instance=ExtResource("29_x6a8j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.5882, 0, -0.667391)
+
+[node name="hex_sand_gltf37" parent="." instance=ExtResource("29_x6a8j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.6864, 0, -0.624168)
+
+[node name="hex_sand_gltf38" parent="." instance=ExtResource("29_x6a8j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.9379, 0, -0.969945)
+
+[node name="hex_sand_gltf39" parent="." instance=ExtResource("29_x6a8j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.3976, 0, 1.10472)
+
+[node name="hex_sand_gltf40" parent="." instance=ExtResource("29_x6a8j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.38, 0, 15.9299)
+
+[node name="hex_sand_gltf41" parent="." instance=ExtResource("29_x6a8j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.4723, 0, 17.4859)
+
+[node name="hex_sand_roadB_gltf" parent="." instance=ExtResource("30_s7uix")]
+transform = Transform3D(-0.52458, 0, -0.851361, 0, 1, 0, 0.851361, 0, -0.52458, 30.5037, 0, 7.63126)
+
+[node name="hex_sand_roadC_gltf" parent="." instance=ExtResource("31_4hyfj")]
+transform = Transform3D(0.478462, 0, -0.878108, 0, 1, 0, 0.878108, 0, 0.478462, 31.4979, 0, 5.98882)
+
+[node name="hex_sand_roadD_gltf" parent="." instance=ExtResource("32_8d0ks")]
+transform = Transform3D(-0.519728, 0, 0.854332, 0, 1, 0, -0.854332, 0, -0.519728, 32.4055, 0, 7.63126)
+
+[node name="hex_sand_gltf42" parent="." instance=ExtResource("29_x6a8j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.5155, 0, 7.63126)
+
+[node name="BerryBush1" parent="." instance=ExtResource("33_ykyjb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.136779, 1, -1.16441)
+
+[node name="BerryBush2" parent="." instance=ExtResource("34_sivbr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.13678, 1, 2.83559)
+
+[node name="Bush1" parent="." instance=ExtResource("35_4yprr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.13678, 1, 0.83559)
+
+[node name="Tree1" parent="." instance=ExtResource("36_1ofy4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.08102, -0.369391, 9.94428)
+
+[node name="Tree2" parent="." instance=ExtResource("36_1ofy4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.20777, -0.406331, -0.19034)
+
+[node name="Tree3" parent="." instance=ExtResource("37_a41ck")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.800032, -0.159613, -0.404675)
+
+[node name="Tree4" parent="." instance=ExtResource("37_a41ck")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0352, -0.162818, 7.72942)
+
+[node name="Bush3" parent="." instance=ExtResource("38_alien")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.774274, 0.997805, 8.82071)
+
+[node name="Bush2" parent="." instance=ExtResource("39_8jhw1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.21121, 0.940728, 9.25867)
+
+[node name="AppleTree" parent="." instance=ExtResource("40_if4ww")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.833, -0.0502858, 3.63239)
+
+[node name="BerryBush3" parent="." instance=ExtResource("41_brp11")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3246, 0.497356, 4.01304)
+
+[node name="Bush4" parent="." instance=ExtResource("39_8jhw1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.6433, 0.495356, 4.81023)
+
+[node name="Tree5" parent="." instance=ExtResource("36_1ofy4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.7467, -0.418874, 13.3418)
+
+[node name="Tree6" parent="." instance=ExtResource("36_1ofy4")]
+transform = Transform3D(0.562791, 0, -0.8266, 0, 1, 0, 0.8266, 0, 0.562791, 15.0935, -0.211302, 12.7887)
+
+[node name="Bush5" parent="." instance=ExtResource("39_8jhw1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.8329, 0.676089, 13.9174)
+
+[node name="LargeRock1" parent="." instance=ExtResource("42_dvobo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.6212, 1.16239, 5.15429)
+
+[node name="LargeRock4" parent="." instance=ExtResource("43_gvloe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.3537, 1.30278, 8.01712)
+
+[node name="LargeRock10" parent="." instance=ExtResource("44_m5u2i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.1643, 1.11647, 1.14292)
+
+[node name="MediumRock2" parent="." instance=ExtResource("45_7u8at")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.9024, 1.15929, 2.15656)
+
+[node name="LargeRock5" parent="." instance=ExtResource("46_u85y0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.91121, 1.30463, 11.7399)
+
+[node name="LargeRock7" parent="." instance=ExtResource("47_uhrmv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.7997, 1.19995, 10.3775)
+
+[node name="MediumRock10" parent="." instance=ExtResource("48_v3d5c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.5357, 0.999943, 13.2896)
+
+[node name="Log3" parent="." instance=ExtResource("49_5xjb2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.9438, 1.14358, 14.8879)
+
+[node name="Log2" parent="." instance=ExtResource("50_lppl5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.1913, 1.1841, 8.78551)
+
+[node name="LargeRock6" parent="." instance=ExtResource("46_u85y0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.0185, 1.00495, 8.05664)
+
+[node name="LargeRock8" parent="." instance=ExtResource("51_l74pm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.0642, 1.04251, 7.70993)
+
+[node name="LargeRock9" parent="." instance=ExtResource("52_i7r67")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.1003, 0.826506, 7.69879)
+
+[node name="Tree7" parent="." instance=ExtResource("37_a41ck")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.108777, -0.139125, 5.29188)
+
+[node name="Tree8" parent="." instance=ExtResource("37_a41ck")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.259049, 0, 6.5377)
+
+[node name="Tree9" parent="." instance=ExtResource("37_a41ck")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.17527, -0.118133, 5.93257)
+
+[node name="Tree10" parent="." instance=ExtResource("36_1ofy4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.32816, -0.227401, 4.58825)
+
+[node name="AppleTree2" parent="." instance=ExtResource("40_if4ww")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.19867, -0.141496, 5.2483)
+
+[node name="Tree11" parent="." instance=ExtResource("36_1ofy4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.17234, -0.0829406, 7.76441)
+
+[node name="Tree12" parent="." instance=ExtResource("37_a41ck")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.31437, -0.173732, 7.0283)
+
+[node name="Bush6" parent="." instance=ExtResource("39_8jhw1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.91502, 0.984978, 6.18114)
+
+[node name="Bush7" parent="." instance=ExtResource("35_4yprr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.4506, 1.09085, 4.40747)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
